@@ -12,7 +12,7 @@ Feel free to contribute, have ideas and submit PR's, this project is React so ex
 
 Happy cooking. 👩‍🍳
 
-This code is based in Uniswap.
+## This code is based in Uniswap.
 
 - Website: [uniswap.org](https://uniswap.org/)
 - Interface: [app.uniswap.org](https://app.uniswap.org)
