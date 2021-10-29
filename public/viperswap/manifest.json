@@ -17,8 +17,8 @@
     }
   ],
   "orientation": "portrait",
-  "name": "Viperswap",
-  "short_name": "Viperswap",
+  "name": "CheffSwap",
+  "short_name": "CheffSwap",
   "start_url": ".",
   "theme_color": "#00a17e"
 }

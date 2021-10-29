@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Send, Code, MessageSquare, PieChart } from 'react-feather'
+import { Send, Code, MessageSquare } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useActiveWeb3React } from '../../hooks'
@@ -111,15 +111,11 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://info.viper.exchange">
-            <PieChart size={14} />
-            Analytics
-          </MenuItem>
-          <MenuItem id="link" href="https://discord.viper.exchange">
+          <MenuItem id="link" href="https://discord.gg/g9Hpwwne5Q">
             <MessageSquare size={14} />
             Discord
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/VenomDAO">
+          <MenuItem id="link" href="https://t.me/CheffWallets">
             <Send size={14} />
             Telegram
           </MenuItem>

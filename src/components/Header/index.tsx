@@ -7,8 +7,8 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
-import ViperLogo from '../../assets/svg/viperswap/black.svg'
-import ViperLogoDark from '../../assets/svg/viperswap/white.svg'
+import ViperLogo from '../../assets/svg/viperswap/profliepicture.png'
+import ViperLogoDark from '../../assets/svg/viperswap/profliepicture.png'
 import CobraLogo from '../../assets/svg/cobraswap/black.svg'
 import CobraLogoDark from '../../assets/svg/cobraswap/white.svg'
 import { useActiveWeb3React } from '../../hooks'
@@ -355,7 +355,7 @@ export default function Header() {
       <HeaderRow>
         <Title href=".">
           <UniIcon>
-            <img width={'48px'} src={darkMode ? logoDark : logo} alt="logo" />
+            <img width={'32px'} src={darkMode ? logoDark : logo} alt="logo" />
           </UniIcon>
         </Title>
         <HeaderLinks>
