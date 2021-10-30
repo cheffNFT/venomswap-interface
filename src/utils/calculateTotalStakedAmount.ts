@@ -6,6 +6,7 @@ export default function calculateTotalStakedAmount(
   totalStakedAmount: TokenAmount,
   totalLpTokenSupply: TokenAmount
 ): TokenAmount {
+  console.log(`${baseToken.name} = ${stakingTokenPair.liquidityToken.name}`)
   // take the total amount of LP tokens staked, multiply by ETH value of all LP tokens, divide by all LP tokens
   return new TokenAmount(
     baseToken,

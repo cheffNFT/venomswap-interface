@@ -1,9 +1,9 @@
 import { Token, TokenAmount, Fraction, ChainId } from '@venomswap/sdk'
 import { wrappedCurrency } from './wrappedCurrency'
-import calculateTotalStakedAmount from './calculateTotalStakedAmount'
+// import calculateTotalStakedAmount from './calculateTotalStakedAmount'
 import getPair from './getPair'
 import { Result } from 'state/multicall/hooks'
-
+/*
 function pairCurrencyAmountInWeth(
   baseToken: Token | undefined,
   tokens: Record<string, any>,
@@ -38,7 +38,7 @@ function pairCurrencyAmountInWeth(
       return valueOfTotalStakedAmountInPairCurrency
   }
 }
-
+*/
 export default function calculateWethAdjustedTotalStakedAmount(
   chainId: ChainId,
   baseToken: Token | undefined,
@@ -60,8 +60,8 @@ export default function calculateWethAdjustedTotalStakedAmount(
     reserve1
   )
   if (!stakingTokenPair) return undefined
-
-  const valueOfTotalStakedAmountInPairCurrency = calculateTotalStakedAmount(
+  return undefined
+  /*const valueOfTotalStakedAmountInPairCurrency = calculateTotalStakedAmount(
     baseToken,
     stakingTokenPair,
     totalStakedAmount,
@@ -69,5 +69,5 @@ export default function calculateWethAdjustedTotalStakedAmount(
   )
   if (!valueOfTotalStakedAmountInPairCurrency) return undefined
 
-  return pairCurrencyAmountInWeth(baseToken, tokenData, valueOfTotalStakedAmountInPairCurrency)
+  return pairCurrencyAmountInWeth(baseToken, tokenData, valueOfTotalStakedAmountInPairCurrency)*/
 }
