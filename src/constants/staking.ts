@@ -42,26 +42,6 @@ export const STAKING_REWARDS_INFO: {
       active: true
     },
     {
-      pid: 6,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, '1ROT/VIPER'),
-      active: true
-    },
-    {
-      pid: 7,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, '1MAGGOT/VIPER'),
-      active: true
-    },
-    {
-      pid: 8,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, '1WISE/VIPER'),
-      active: true
-    },
-    {
-      pid: 9,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, '1DSLA/VIPER'),
-      active: true
-    },
-    {
       pid: 10,
       tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, 'LINK/VIPER'),
       active: true
@@ -102,11 +82,6 @@ export const STAKING_REWARDS_INFO: {
       active: true
     },
     {
-      pid: 18,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, '1WISE/1ETH'),
-      active: true
-    },
-    {
       pid: 19,
       tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, 'WONE/1WBTC'),
       active: true
@@ -114,11 +89,6 @@ export const STAKING_REWARDS_INFO: {
     {
       pid: 20,
       tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, 'WONE/1MATIC'),
-      active: true
-    },
-    {
-      pid: 21,
-      tokens: getPairTokensWithDefaults(ChainId.HARMONY_MAINNET, 'JENN/VIPER'),
       active: true
     }
   ],

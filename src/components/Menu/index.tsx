@@ -89,7 +89,7 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/VenomProtocol'
+const CODE_LINK = 'https://adapools.org/pool/d425fd2cf93347999106b8fbb463cc87af26791d8d31d957193204db'
 
 export default function Menu() {
   const { account } = useActiveWeb3React()
@@ -121,7 +121,7 @@ export default function Menu() {
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
-            Code
+            Cheff Pool!
           </MenuItem>
           {account && blockchain === Blockchain.ETHEREUM && (
             <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="12px" mt="0.5rem">

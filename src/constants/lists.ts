@@ -17,9 +17,9 @@ const CMC_ALL_LIST = 'defi.cmc.eth'
 const CMC_STABLECOIN = 'stablecoin.cmc.eth'
 const KLEROS_LIST = 't2crtokens.eth'
 const GEMINI_LIST = 'https://www.gemini.com/uniswap/manifest.json'*/
-const VENOMSWAP_DEFAULT_LIST = 'https://d1xrz6ki9z98vb.cloudfront.net/venomswap/lists/venomswap-default.tokenlist.json'
-const VENOMSWAP_COMMUNITY_LIST =
-  'https://d1xrz6ki9z98vb.cloudfront.net/venomswap/lists/venomswap-community.tokenlist.json'
+const VENOMSWAP_DEFAULT_LIST = 'https://cheffpool.com/cheffswap/default.tokenlist.json'
+//const VENOMSWAP_COMMUNITY_LIST =
+//  'https://d1xrz6ki9z98vb.cloudfront.net/venomswap/lists/venomswap-community.tokenlist.json'
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [
@@ -37,7 +37,6 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
   KLEROS_LIST,
   GEMINI_LIST,*/
   VENOMSWAP_DEFAULT_LIST,
-  VENOMSWAP_COMMUNITY_LIST,
   ...UNSUPPORTED_LIST_URLS // need to load unsupported tokens as well
 ]
 
