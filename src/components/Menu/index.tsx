@@ -90,7 +90,7 @@ const MenuItem = styled(ExternalLink)`
 `
 
 const CODE_LINK = 'https://adapools.org/pool/d425fd2cf93347999106b8fbb463cc87af26791d8d31d957193204db'
-
+const HELP_LINK = 'https://docs.harmony.one/home/network/wallets/browser-extensions-wallets/metamask-wallet'
 export default function Menu() {
   const { account } = useActiveWeb3React()
   const blockchain = useBlockchain()
@@ -111,6 +111,10 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
+          <MenuItem id="link" href={HELP_LINK}>
+            <Code size={14} />
+            How To
+          </MenuItem>
           <MenuItem id="link" href="https://discord.gg/g9Hpwwne5Q">
             <MessageSquare size={14} />
             Discord
@@ -121,7 +125,7 @@ export default function Menu() {
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
-            Cheff Pool!
+            Pool
           </MenuItem>
           {account && blockchain === Blockchain.ETHEREUM && (
             <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="12px" mt="0.5rem">

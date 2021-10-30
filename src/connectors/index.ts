@@ -12,11 +12,11 @@ import { Blockchain, Currency } from '@venomswap/sdk'
 import baseCurrencies from '../utils/baseCurrencies'
 import getBlockchain from '../utils/getBlockchain'
 
-export const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
-export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1')
+export const NETWORK_URL = 'https://api.s0.t.hmny.io'
+export const NETWORK_CHAIN_ID: number = parseInt('1666600000')
 
-const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
-const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
+const FORMATIC_KEY = 'pk_live_F937DF033A1666BF'
+const PORTIS_ID = 'c0e2bf01-4b08-4fd5-ac7b-8e26b58cd236'
 
 if (typeof NETWORK_URL === 'undefined') {
   throw new Error(`REACT_APP_NETWORK_URL must be a defined environment variable`)
@@ -58,8 +58,7 @@ export const injected = new InjectedConnector({
 export const walletconnect = new WalletConnectConnector({
   rpc: { 1: NETWORK_URL },
   bridge: 'https://bridge.walletconnect.org',
-  qrcode: true,
-  pollingInterval: 15000
+  qrcode: true
 })
 
 // mainnet only
