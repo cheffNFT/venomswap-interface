@@ -14,8 +14,13 @@ import useBlockchain from '../../hooks/useBlockchain'
 export const getTokenLogoURL = (address: string) =>
   `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
 
-export const getTokenFallbackLogoURL = (currency: Currency) =>
-  `https://d1xrz6ki9z98vb.cloudfront.net/venomswap/tokens/${currency.symbol}.png`
+export const getTokenFallbackLogoURL = (currency: Currency) => {
+  if (currency.symbol === 'CHEFF') {
+    return 'https://www.cheffpool.com/images/cheff_logo.png'
+  } else {
+    return `https://d1xrz6ki9z98vb.cloudfront.net/venomswap/tokens/${currency.symbol}.png`
+  }
+}
 
 const StyledEthereumLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
@@ -51,7 +56,7 @@ export default function CurrencyLogo({
       const logoUrlLocation = [56, 97, 1666600000, 1666700000].includes(currency.chainId)
         ? getTokenFallbackLogoURL(currency)
         : getTokenLogoURL(currency.address)
-
+      console.log(logoUrlLocation)
       if (currency instanceof WrappedTokenInfo) {
         return [...uriLocations, logoUrlLocation]
       }
